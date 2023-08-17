@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pypong"
+name = "pyPong"
 version = "0.1.0"
 description = "a simple pong game made with pygame"
 authors = ["Sven Schneider <sven.schneider08@gmail.com>"]

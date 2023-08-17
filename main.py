@@ -3,6 +3,8 @@ import random
 import settings
 
 
+is_Game_Over = False
+
 # Set up the ball
 ball_pos = [400, 300]
 ball_vel = [3, 3]
@@ -35,8 +37,8 @@ pg.init()
 # Set up the clock
 clock = pg.time.Clock()
 
-hit_sound = pg.mixer.Sound('ball.wav')
-bounce_sound = pg.mixer.Sound('wall_hit.wav')
+hit_sound = pg.mixer.Sound(settings.SOUNDS + 'ball.wav')
+bounce_sound = pg.mixer.Sound(settings.SOUNDS + 'wall_hit.wav')
 pg.mixer.Sound.set_volume(hit_sound, 0.2)
 pg.mixer.Sound.set_volume(bounce_sound, 0.4)
 
