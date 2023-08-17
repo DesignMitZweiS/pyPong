@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pypong"
+version = "0.1.0"
+description = "a simple pong game made with pygame"
+authors = ["Sven Schneider <sven.schneider08@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygame = "^2.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
