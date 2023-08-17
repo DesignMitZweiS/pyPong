@@ -55,18 +55,14 @@ UPDATE_cpu_pos = pg.USEREVENT + 1
 pg.time.set_timer(UPDATE_cpu_pos, 100)
 cpu_target_y = 0
 
-''' shows the winner of the game, either player or cpu '''
-
 
 def show_winner_text(who_won):
+    """ shows the winner of the game, either player or cpu """
     winner_text = font.render(who_won + " wins!", True, settings.WHITE)
     screen.blit(
         winner_text, (settings.PLAYABLE_AREA[0] / 2 - 150,
                       settings.PLAYABLE_AREA[1] / 2 - 40)
     )
-
-
-''' draws a dotted line on the screen '''
 
 
 def draw_dotted_line(surface,
@@ -77,7 +73,7 @@ def draw_dotted_line(surface,
                      dot_length=10,
                      gap_length=5
                      ):
-
+    """ draws a dotted line on the screen """
     distance = end_pos[0] - start_pos[0], end_pos[1] - start_pos[1]
     length = pg.math.Vector2(distance).length()
     angle = pg.math.Vector2(distance).angle_to((1, 0))
@@ -92,10 +88,8 @@ def draw_dotted_line(surface,
         pg.draw.line(surface, color, start, end, width)
 
 
-''' draws the score of plyer and cpu '''
-
-
 def draw_score():
+    """ draws the score of player and cpu """
     player_score_text = font.render(str(player_score), True, settings.WHITE)
     cpu_score_text = font.render(str(cpu_score), True, settings.WHITE)
     screen.blit(player_score_text, (settings.PLAYABLE_AREA[0] / 4, 10))
