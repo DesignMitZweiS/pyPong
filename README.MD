@@ -1,4 +1,4 @@
-# Simple Pong Game made with pygame
+# A simple Pong game made with pygame
 
 I'm discovering pygame so this is a little proof-of-concept for me while learning the syntax, etc. 
 
