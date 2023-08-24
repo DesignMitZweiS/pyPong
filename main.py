@@ -1,7 +1,7 @@
 """ pyPong - A simple pong game made with pygame """
 import random
-import pygame as pg
 import settings
+import pygame as pg
 
 # Initialize pyGame
 pg.init()
@@ -87,7 +87,6 @@ def draw_dotted_line(surface,
 
 def reset_ball():
     """ resets the ball to the middle of the screen and waits 1 second """
-    ball_vel = [3, 3]
     ball_vel[1] += (random.random()-0.15)
     ball_vel[0] = -ball_vel[0]
     pg.time.delay(1000)
@@ -240,6 +239,7 @@ while running:
                       settings.PLAYABLE_AREA[1]+15),
                      width=10, dot_length=10, gap_length=20
                      )
+
     # draw the ball and paddles
     pg.draw.rect(screen, settings.WHITE, ball_rect)
     pg.draw.rect(screen, settings.WHITE, player_rect)
