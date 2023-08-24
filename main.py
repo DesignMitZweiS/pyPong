@@ -1,7 +1,7 @@
 """ pyPong - A simple pong game made with pygame """
 import random
-import settings
 import pygame as pg
+import settings
 
 # Initialize pyGame
 pg.init()
