@@ -11,8 +11,8 @@ ball_pos = [400, 300]
 ball_vel = [3, 3]
 
 # Set up the player and CPU paddles
-player_pos = [0, 300]
-cpu_pos = [780, 300]
+player_pos = [50, 300]
+cpu_pos = [730, 300]
 
 ball_rect = pg.Rect(ball_pos[0],
                     ball_pos[1],
